@@ -52,7 +52,7 @@ class PvOutput:
         params = {
             "d": datetime.strftime("%Y%m%d"),
             "t": datetime.strftime("%H:%M"),
-            "v1": msg.getEToday(),
+            "v1": msg.getEToday() * 1000,
             "v2": msg.getPower(),
             "v5": msg.getTemp(),
             "v6": msg.getVAC(1),
