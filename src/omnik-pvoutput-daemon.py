@@ -20,7 +20,7 @@ from Daemon import Daemon
 
 
 def main():
-    logging.basicConfig(filename='omnik-pvoutput-daemon.log', level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
 
     sevr = Daemon()
     sevr.run()

@@ -25,7 +25,7 @@ from SolarSystem import SolarSystem
 
 class PvOutput:
     def __init__(self):
-        with open("config.ini") as f:
+        with open("/etc/omnik-pvoutput.ini") as f:
             configFile = f.read()
 
         config = ConfigParser.RawConfigParser(allow_no_value = True)
